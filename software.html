@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ryan Nguyen — Computer Science & Brand Design</title>
-<meta name="description" content="Ryan Nguyen, computer science student at the University of Connecticut. Python and AI projects, plus brand and social media work for R&B Tea Odessa.">
+<title>Ryan Nguyen's Portfolio — Computer Science Student</title>
+<meta name="description" content="Ryan Nguyen, a computer science student at the University of Connecticut. Shows Python and AI projects plus social media marketing and advertising work.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header class="subpage-nav">
@@ -20,58 +20,111 @@
   </div>
 </header>
 
-<!-- ================= D · EXPERIENCE ================= -->
+<!-- ================= EXPERIENCE ================= -->
 <section class="sec" id="experience">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-code">D</span>
-      <h2>Experience</h2>
+      <span class="sec-code">B</span>
+      <h2>More Software Projects</h2>
       <svg class="squiggle" viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M0,10 C25,2 50,18 75,10 S125,2 150,10 S200,18 225,10 S275,2 300,10"/></svg>
-      <span class="sec-note">Most recent first</span>
     </div>
-
     <article class="job rv">
-      <span class="code">D1</span>
+      <span class="code">B4</span>
       <div>
-        <h3>Digital Marketer &amp; Social Media Manager</h3>
-        <p class="org">R&amp;B Tea Odessa — Odessa, TX</p>
-        <ul>
-          <li>Led the launch and growth of the brand across Instagram, TikTok, and Facebook, building awareness for a store opening in a new market.</li>
-          <li>Designed the menu system and every promotional graphic in Photoshop and After Effects.</li>
-          <li>Managed financial planning for the grand opening and set the interior layout for the space.</li>
-        </ul>
-      </div>
-      <span class="when">Dec 2025 — Present</span>
-    </article>
-
-    <article class="job rv">
-      <span class="code">D2</span>
-      <div>
-        <h3>Student Coding Assistant</h3>
-        <p class="org">Bridgeport Caribe Youth Leaders — Bridgeport, CT</p>
-        <ul>
-          <li>Taught Python to students in grades 5 through 8, from first loops to working programs.</li>
-          <li>Ran sessions alongside a coworker on a schedule we built to keep the room focused.</li>
-          <li>Handled the laptop troubleshooting so class time went to coding, not to fixing machines.</li>
-        </ul>
-      </div>
-      <span class="when">Apr 2024 — Jun 2024</span>
-    </article>
-
-    <article class="job rv">
-      <span class="code">D3</span>
-      <div>
-        <h3>Peer Mentor</h3>
-        <p class="org">Youthful Impact — Bridgeport, CT</p>
-        <ul>
-          <li>Presented a team community project to an audience of 200+ students, supporting the program's recruiting.</li>
-          <li>Led a group of peers through their Coursera certificates and answered course questions as they came up.</li>
-        </ul>
-      </div>
-      <span class="when">Sep 2023 — Sep 2024</span>
-    </article>
+        <h3><a href="https://github.com/RyannWinn/ai201-project3-takemeter">Takemeter — r/nba Post Classifier</a></h3>
+    <p class="org">AI201 Applications of AI Engineering</p>
+    <div class="takemeter-content">
+      <ul>
+        <li>
+          A natural language processing text classifier built to categorize
+          Reddit posts from r/nba into four types: analysis, hot_take,
+          reaction, and rumors_news.
+        </li>
+        <li>
+          Contains 221 hand-labeled examples modeled after real r/nba posts
+          and slang from 2019–2025, with 17 flagged edge cases.
+        </li>
+        <li>
+          DistilBERT struggled heavily with the hot_take category,
+          misclassifying 44% of errors as rumor_news. It relied on
+          surface-level cues and didn't detect underlying intent.
+        </li>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Hugging Face</span><span class="chip">PyTorch</span><span class="chip">Groq</span></div>
+      </ul>
+      <iframe
+        src="https://www.youtube.com/embed/mya1v4tqCjs"
+        title="Takemeter demo video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
+</article>
+
+ <article class="job rv">
+      <span class="code">B5</span>
+      <div>
+        <h3><a href="https://colab.research.google.com/drive/1j9VhMwhjPaUyTrsarhDr39p58P1sUouB?usp=sharing">Emotion Detection Tool</a></h3>
+    <p class="org">Fairfield University AI Summer Program</p>
+    <div class="takemeter-content">
+      <ul>
+        <li>
+          Performs facial emotion detection and demographic analysis using pre-trained
+          computer vision and deep learning packages in Google Colab.
+        </li>
+        <li>
+          Detects human faces in static images and predicts facial emotions such as happy, fear, and sad. It also
+          detects demographic attributes such as age, gender, and race.
+        </li>
+        <li>
+          Uses deepface library for facial attribute analysis including emotion classification, gender prediction,
+          age estimation, and race estimation.
+        </li>
+        <div class="chips"><span class="chip">Python</span><span class="chip">DeepFace</span><span class="chip">FER</span><span class="chip">Matplotlib</span></div>
+      </ul>
+      <figure class="cert rv" data-zoom>
+      <div class="frame">
+        <img src="images/Screenshot 2026-09-08 at 8.10.19 PM.png" alt="Shows picture of two guys with different emotions. Program detects emotions." loading="lazy">
+      <figcaption class="cap"><span class="t">Two people showing different emotions to test if the program can detect them.</span></figcaption>
+      </div>
+      </figure>
+    </div>
+  </div>
+</article>
+
+ <article class="job rv">
+      <span class="code">B6</span>
+      <div>
+        <h3><a href="https://colab.research.google.com/drive/1EgjAPFk5hsAFMYLKhCRAkbvIHvTWVqa-?usp=sharing">Spam Detection Tool</a></h3>
+    <p class="org">Fairfield University AI Summer Program</p>
+    <div class="takemeter-content">
+      <ul>
+        <li>
+          Implemented a classical SMS/Text Spam Detection Classifier in Python using scikit-learn and classifies incoming text 
+          messages as either spam (1) or legitimate (0).
+        </li>
+        <li>
+          Loads a dataset of text messages via pandas and maps the string target labels into binary indicators. It splits the data into training
+          and test sets using train_test_split to evaluate performance on unseen text.
+        </li>
+        <li>
+          Evaluates test-set accuracy and runs inference on custom sample messages. It also trains a Multinomial Naive Bayes classifier,
+          a standard highly efficient probabilistic algorithm.
+        </li>
+        <div class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">numpy</span><span class="chip">seaborn</span></div>
+      </ul>
+      <figure class="cert rv" data-zoom>
+      <div class="frame">
+        <img src="images/Screenshot 2026-09-08 at 8.43.47 PM.png" alt="Shows screenshot of the output of three different prompts and determines if its spam or not." loading="lazy">
+      <figcaption class="cap"><span class="t">A screenshot of the output of three different prompts and determines if its spam or not.</span></figcaption>
+      </div>
+      </figure>
+    </div>
+  </div>
+</article>
 </section>
+
 <!-- ================= FOOTER ================= -->
 <footer class="foot" id="contact">
   <div class="wrap">
@@ -86,6 +139,12 @@
     </div>
   </div>
 </footer>
-<script src="script.js"></script>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="lb-close" id="lbclose">Close ✕</button>
+  <img id="lbimg" alt="">
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -161,7 +161,10 @@ h1,h2,h3{font-family:var(--display);font-weight:800;margin:0;line-height:1.02;le
 
 /* ---------- hero ---------- */
 .hero {
-padding:clamp(82px, 11vh, 118px) 0 clamp(56px, 8vw, 92px);position:relative;overflow:hidden}
+padding:clamp(82px, 11vh, 118px) 0 30px;position:relative;overflow:hidden}
+#profile {
+  padding-top:90px;
+}
 .hero-grid{display:grid;grid-template-columns:1.5fr .74fr;gap:clamp(28px,5vw,64px);align-items:end}
 .eyebrow{display:flex;align-items:center;gap:10px;color:var(--forest);margin-bottom:22px}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--leaf);flex:none}
@@ -433,4 +436,31 @@ h1 em.hot{color:var(--hot)}
 
 .back-link:hover span {
   transform: translateX(-4px);
+}
+
+.takemeter-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(380px, 0.8fr);
+  align-items: start;
+  gap: 40px;
+  margin-top: 14px;
+}
+
+.takemeter-content ul {
+  margin-top: 0;
+}
+
+.takemeter-content iframe {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .takemeter-content {
+    grid-template-columns: 1fr;
+  }
 }
